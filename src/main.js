@@ -16,9 +16,9 @@ document.body.appendChild(renderer.domElement);
 // Define 2D triangle shape points (clockwise vertices)
 const points = [
   new THREE.Vector2(0, 0),
-  new THREE.Vector2(4, 1),
-  new THREE.Vector2(4, 1.2),
-  new THREE.Vector2(0, 6),
+  new THREE.Vector2(4, 0),
+  new THREE.Vector2(5, 1),
+  new THREE.Vector2(0, 7),
   new THREE.Vector2(0, 0),
 ];
 
