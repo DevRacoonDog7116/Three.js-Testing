@@ -15,15 +15,11 @@ document.body.appendChild(renderer.domElement);
 
 // Define 2D triangle shape points (clockwise vertices)
 const points = [
-  new THREE.Vector2(3.1, -0.2), 
-  new THREE.Vector2(4.9, 0), 
-  new THREE.Vector2(5, 0.1), 
-  new THREE.Vector2(4.1, 1.9), 
-  new THREE.Vector2(4, 2), 
-  new THREE.Vector2(3.1, 2),  
-  new THREE.Vector2(3, 1.9), 
-  new THREE.Vector2(3, 0), 
-  new THREE.Vector2(3.1, -0.2), 
+  new THREE.Vector2(0, 0),
+  new THREE.Vector2(4, 1),
+  new THREE.Vector2(4, 1.2),
+  new THREE.Vector2(0, 8),
+  new THREE.Vector2(0, 0),
 ];
 
 // Apply LatheGeometry to the shape
