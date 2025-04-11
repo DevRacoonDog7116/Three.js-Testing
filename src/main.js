@@ -27,7 +27,7 @@ const points = [
 ];
 
 // Apply LatheGeometry to the shape
-const geometry = new THREE.LatheGeometry(points, 60); // 60 segments for rotation
+const geometry = new THREE.LatheGeometry(points, 180); // 60 segments for rotation
 
 // Material for the lathed object with MeshNormalMaterial
 const material = new THREE.MeshNormalMaterial({
@@ -36,7 +36,7 @@ const material = new THREE.MeshNormalMaterial({
 });
 
 // Create the lathed mesh
-const lathedMesh = new THREE.Mesh(geometry, material);
+const lathedMesh = new THREE.Mesh(geometry, material); 
 scene.add(lathedMesh);
 
 // Add a light source to the scene (Directional light)
@@ -45,15 +45,15 @@ directionalLight.position.set(5, 5, 5); // Position it slightly above and to the
 scene.add(directionalLight);
 
 // Add ambient light to simulate sky light (soft, uniform light)
-const ambientLight = new THREE.AmbientLight(0x404040, 1); // Soft white ambient light
+const ambientLight = new THREE.AmbientLight(0x303030, 1); // Soft white ambient light
 scene.add(ambientLight);
 
 // Set the camera position
-camera.position.z = 10;
+camera.position.z = 10; 
 
 // Variables to track mouse movement
-let mouseX = 0;
-let mouseY = 0;
+let mouseX = 0; 
+let mouseY = 0; 
 
 // Event listener for mouse movement
 window.addEventListener("mousemove", (event) => {
