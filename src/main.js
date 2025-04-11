@@ -18,12 +18,12 @@ const points = [
   new THREE.Vector2(0, 0),
   new THREE.Vector2(4, 1),
   new THREE.Vector2(4, 1.2),
-  new THREE.Vector2(0, 8),
+  new THREE.Vector2(0, 6),
   new THREE.Vector2(0, 0),
 ];
 
 // Apply LatheGeometry to the shape
-const geometry = new THREE.LatheGeometry(points, 180); // 60 segments for rotation
+const geometry = new THREE.LatheGeometry(points, 12); // 12 segments for rotation
 
 // Material for the lathed object with MeshNormalMaterial
 const material = new THREE.MeshNormalMaterial({
